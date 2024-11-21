@@ -197,6 +197,10 @@ header nav a:hover:after {
   box-shadow: 0 8px 20px rgba(0, 255, 198, 0.8);
 }
 
+.order-title {
+  text-align: center;
+}
+
 /* Формы */
 form {
   display: flex;
@@ -210,7 +214,7 @@ form {
   margin: 0 auto;
   width: 90%;
   max-width: 400px;
-  font-family: "Arial", sans-serif; /* Изменён шрифт */
+  margin-bottom: 2rem; /* Добавлен отступ между формой и футером */
 }
 
 form label {
@@ -241,25 +245,6 @@ form button:hover {
   box-shadow: 0 0 10px rgba(0, 255, 198, 0.6);
 }
 
-/* Стилизация кнопки "Оформить заказ" */
-form button {
-  background: linear-gradient(135deg, #00ffc6, #00b3a6);
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 0 0 15px rgba(0, 255, 198, 0.6);
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-
-form button:hover {
-  background: linear-gradient(135deg, #00b3a6, #00ffcc);
-  transform: scale(1.1);
-}
-
 /* Футер */
 footer {
   background: rgba(0, 0, 0, 0.9);
@@ -271,30 +256,38 @@ footer {
 
 /* Медиа-запросы */
 @media (max-width: 1024px) {
-  .advantage-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gallery img {
+  .advantage {
     width: 45%;
   }
-
-  form {
-    width: 80%;
+  .gallery img {
+    width: 45%;
   }
 }
 
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
+  header {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .advantage-list {
-    gap: 1rem;
+  .advantage {
+    width: 100%;
   }
 
   .gallery img {
-    width: 80%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
   }
 }
