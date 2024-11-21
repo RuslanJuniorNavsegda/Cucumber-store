@@ -5,71 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="page-loader">Загрузка...</div>
 
     <header>
-      <div class="logo">🥒 Огурцы Fresh</div>
+      <div class="logo">Огурцы</div>
       <nav>
         <a href="#advantages">Преимущества</a>
         <a href="#gallery">Галерея</a>
-        <a href="#order">Заказать</a>
+        <a href="#order">Заказ</a>
       </nav>
     </header>
 
     <section class="hero">
-      <h1 class="fade-text">Свежие огурцы прямо с грядки</h1>
-      <p class="fade-text">Экологично, вкусно и выгодно!</p>
-      <button class="cta-btn fade-text">Купить сейчас</button>
+      <h1>Самые свежие огурцы у нас!</h1>
+      <p>Попробуйте наши огурцы и почувствуйте настоящую свежесть.</p>
+      <button class="cta-btn">Узнать больше</button>
     </section>
 
     <section id="advantages">
-      <h2 class="fade-text">Почему наши огурцы?</h2>
+      <h2>Почему выбирают нас?</h2>
       <div class="advantage-list">
-        <div class="advantage fade-text">
+        <div class="advantage">
           <h3>Экологичность</h3>
-          <p>Мы выращиваем наши огурцы без химикатов.</p>
+          <p>Наши огурцы выращены без использования химикатов.</p>
         </div>
-        <div class="advantage fade-text">
+        <div class="advantage">
           <h3>Свежесть</h3>
-          <p>Собираем каждый день и доставляем прямо к вам.</p>
+          <p>Огурцы поставляются прямо с фермы.</p>
         </div>
-        <div class="advantage fade-text">
-          <h3>Доступная цена</h3>
-          <p>Вы получаете лучшее качество по разумной цене.</p>
+        <div class="advantage">
+          <h3>Доступные цены</h3>
+          <p>Мы предлагаем лучшую цену за высокое качество.</p>
         </div>
       </div>
     </section>
 
     <section id="gallery">
-      <h2 class="fade-text">Галерея</h2>
+      <h2>Галерея наших огурцов</h2>
       <div class="gallery">
         <img
-          src="f0c1a70bc2ffe391fc6eb0953d01b4d0.png"
+          src="/images/f0c1a70bc2ffe391fc6eb0953d01b4d0.png"
           alt="Огурец 1"
-          class="fade-text"
         />
-        <img src="ogurci.png" alt="Огурец 2" class="fade-text" />
-        <img
-          src="pngimg.com - cucumber_PNG84327.png"
-          alt="Огурец 3"
-          class="fade-text"
-        />
+        <img src="/images/ogurci.png" alt="Огурец 2" />
+        <img src="/images/pngimg.com - cucumber_PNG84327.png" alt="Огурец 3" />
       </div>
     </section>
 
     <section id="order">
-      <h2 class="fade-text">Закажите сейчас</h2>
+      <h2>Оформите заказ</h2>
       <form>
-        <input type="text" placeholder="Ваше имя" required />
-        <input type="tel" placeholder="Ваш телефон" required />
-        <button type="submit" class="fade-text">Отправить заказ</button>
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" placeholder="Введите ваше имя" required />
+
+        <label for="phone">Номер телефона</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Введите номер телефона"
+          required
+        />
+
+        <label for="address">Адрес доставки</label>
+        <textarea
+          id="address"
+          placeholder="Введите адрес доставки"
+          required
+        ></textarea>
+
+        <button type="submit">Оформить заказ</button>
       </form>
     </section>
 
     <footer>
-      <p>© 2024 Огурцы Fresh | Контакты: +7 (123) 456-7890</p>
+      <p>© 2024 Продажа огурцов. Все права защищены.</p>
     </footer>
 
     <script src="javascript.js"></script>
