@@ -264,13 +264,13 @@ footer {
     align-items: center;
   }
 
-  .advantage {
+  /* .advantage {
     width: 100%;
   }
 
   .gallery img {
     width: 100%;
-  }
+  } */
 }
 
 @media (max-width: 480px) {

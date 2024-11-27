@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
 
   const textElements = document.querySelectorAll(".fade-text");
   textElements.forEach((el, idx) => {
-    setTimeout(() => el.classList.add("visible"), idx * 200);
+    setTimeout(() => el.classList.add("visible"), idx * 200); // Добавляем видимость с задержкой
   });
 });
 
